@@ -1,5 +1,4 @@
 # lib (io) makefile
-
 NAME = 	io
 SRC = \
 	xchar.c \

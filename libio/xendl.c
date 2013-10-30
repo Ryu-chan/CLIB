@@ -8,15 +8,15 @@
  * post: return char printed to fd provided
  */
 
-#include "../lib/libio.h";
+#include "../lib/libio.h"
 
 void 		endl(
 ){
-	xchar('\n');
+	printc('\n');
 }
 
 void 		fendl(
 	int		fd
 ){
-	xchar(fd,'\n');
+	fprintc(fd,'\n');
 }

@@ -8,7 +8,7 @@
  * post: string printed to fd provided
  */
 
-#include "../lib/libio.h";
+#include "../lib/libio.h"
 
 void 		prints(
 	char* 	str

@@ -8,7 +8,7 @@
  * post: inbt printed to fd provided
  */
 
-#include "../lib/libio.h";
+#include "../lib/libio.h"
 
 void 				printi(
 	int 			n
@@ -28,7 +28,7 @@ void 				printi(
 }
 
 void 				fprinti(
-	int 			fd
+	int 			fd,
 	int 			n
 ){
 	unsigned int 	i;
