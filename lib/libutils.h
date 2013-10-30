@@ -6,6 +6,9 @@
 #ifndef _LIBUTILS_H_
 #define _LIBUTILS_H_
 
+#include <stdlib.h>
+#include <unistd.h>
+
 #ifndef NULL
 #define NULL ((void*)0)
 #endif

@@ -6,10 +6,7 @@
 #ifndef _LIBIO_H_
 #define _LIBIO_H_
 
-#include "../lib/libio.h"
-
-#include <stdlib.h>
-#include <unistd.h>
+#include "../lib/libutils.h"
 
 #ifndef C_
 #define C_ (char)
