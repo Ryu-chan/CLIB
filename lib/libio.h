@@ -6,30 +6,35 @@
 #ifndef _LIBIO_H_
 #define _LIBIO_H_
 
-#ifndef NULL
-#define NULL ((void*)0)
-#endif
-
-#ifndef TRUE
-#define TRUE 1
-#endif
-
-#ifndef FALSE
-#define FALSE 0
-#endif
+#include "../lib/libio.h"
 
 #include <stdlib.h>
 #include <unistd.h>
 
-void 	xchar			( char );
-void 	xchar			( int, char );
+#ifndef C_
+#define C_ (char)
+#endif
+#ifndef I_
+#define I_ (int)
+#endif
+#ifndef F_
+#define F_ (float)
+#endif
 
-void 	xstr			( char* );
-void 	xstr			( int, char* );
+__BEGIN_DECLS
 
-void 	xint			( int );
-void 	xint			( int, int );
+void 	printc			( char );
+void 	fprintc			( int, char );
 
-void 	xendl			( );
+void 	prints			( char* );
+void 	fprints			( int, char* );
+
+void 	printi			( int );
+void 	fprinti			( int, int );
+
+void 	endl			( );
+void 	fendl			( int );
+
+__END_DECLS
 
 #endif
