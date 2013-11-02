@@ -14,7 +14,7 @@
 	p = malloc(n);
 	
 	if (p == 0){
-		my_str("Virtual Memory Exhausted\n");
+		write(2,"Virtual Memory Exhausted\n",25);
 		exit(1);
 	}
 	

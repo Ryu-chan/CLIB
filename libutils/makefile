@@ -1,4 +1,7 @@
 # lib (utils) makefile
+
+CFLAGS += -pedantic-errors
+
 NAME = 	utils
 SRC = \
 	xmalloc.c

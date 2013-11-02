@@ -10,12 +10,12 @@
 
 #include "../lib/libio.h"
 
-void 		endl(
+void 		printe(
 ){
 	printc('\n');
 }
 
-void 		fendl(
+void 		fprinte(
 	int		fd
 ){
 	fprintc(fd,'\n');

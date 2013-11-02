@@ -1,4 +1,7 @@
 # lib (io) makefile
+
+CFLAGS += -pedantic-errors
+
 NAME = 	io
 SRC = \
 	xchar.c \

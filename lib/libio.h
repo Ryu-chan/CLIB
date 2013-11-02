@@ -8,16 +8,6 @@
 
 #include "../lib/libutils.h"
 
-#ifndef C_
-#define C_ (char)
-#endif
-#ifndef I_
-#define I_ (int)
-#endif
-#ifndef F_
-#define F_ (float)
-#endif
-
 __BEGIN_DECLS
 
 void 	printc			( char );
@@ -29,8 +19,8 @@ void 	fprints			( int, char* );
 void 	printi			( int );
 void 	fprinti			( int, int );
 
-void 	endl			( );
-void 	fendl			( int );
+void 	printe			( );
+void 	fprinte			( int );
 
 __END_DECLS
 
