@@ -1,6 +1,6 @@
 /*
- * project: 	CLIB::UTIL
- * author:		Christopher Kelley (c)2013
+ * 計画: CLIB::UTIL
+ * 筆者: Christopher Kelley (c)2013
  */
 
 #ifndef _LIBUTILS_H_

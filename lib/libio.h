@@ -1,6 +1,6 @@
 /*
- * project: 	CLIB::IO
- * author:		Christopher Kelley (c)2013
+ * 計画: CLIB::IO
+ * 筆者: Christopher Kelley (c)2013
  */
 
 #ifndef _LIBIO_H_
@@ -10,17 +10,23 @@
 
 __BEGIN_DECLS
 
-void 	printc			( char );
-void 	fprintc			( int, char );
+bool 	writec			( char );
+bool 	fwritec			( int, char );
 
-void 	prints			( char* );
-void 	fprints			( int, char* );
+bool 	writes			( const char* );
+bool 	fwrites			( int, const char* );
 
-void 	printi			( int );
-void 	fprinti			( int, int );
+bool 	writei			( int );
+bool 	fwritei			( int, int );
 
-void 	printe			( );
-void 	fprinte			( int );
+bool 	writeb			( bool );
+bool	fwriteb			( int, bool );
+
+bool 	writef			( float );
+bool 	fwritef			( int, float );
+
+bool 	writee			( );
+bool 	fwritee			( int );
 
 __END_DECLS
 
