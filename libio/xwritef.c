@@ -32,7 +32,7 @@ bool 		fwritef(
 	part = (int)f;
 	if(!fwritei(fd,part)) return FALSE;
 	if(!fwritec(fd,'.'))  return FALSE;
-	part = ((int)(f*PRECISION)%PRECISION);
+	part = ((int)(f*PRECISION));
 	if(!fwritei(fd,part)) return FALSE;
 	return TRUE;
 }

@@ -19,12 +19,10 @@ int main(int argc, char** argv){
 	writef(0.12345678910);
 	writee();
 
-
-
-
-
-
-
+	writeb(fwritec(5,'\r'));
+	writee();
+	writeb(writec('\r'));
+	writee();
 
 }
 

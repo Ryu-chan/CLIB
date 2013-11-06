@@ -1,7 +1,5 @@
 /*
- * xmalloc( int )
- * pre: integer size of space to alloc
- * post: returns alloced memory or has exited
+ * malloc とチエック
  */
 
 #include "../lib/libutils.h"
