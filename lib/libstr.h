@@ -10,21 +10,21 @@
 
 __BEGIN_DECLS
 
-int 	str_index		(char*,char);
-int 	str_rindex		(char*,char);
-int 	str_len			(char*);
+int 	str_index		(const char*,char);
+int 	str_rindex		(const char*,char);
+int 	str_len			(const char*);
 int 	str_rev			(char*);
 
-int		str_cmp			(char*,char*);
-int		str_ncmp		(char*,char*,int);
-char*	str_concat		(char*,char*);
-char*	str_nconcat		(char*,char*,int);
-char*	str_cpy			(char*,char*);
-char*	str_ncpy		(char*,char*,int);
-char*	str_dup			(char*);
+int		str_cmp			(const char*,const char*);
+int		str_ncmp		(const char*,const char*,int);
+char*	str_concat		(const char*,const char*);
+char*	str_nconcat		(const char*,const char*,int);
+char*	str_cpy			(char*,const char*);
+char*	str_ncpy		(char*,const char*,int);
+char*	str_dup			(const char*);
 
 char*	str_combine		(char**,const char*);
-char** 	str_split		(char*,char);
+char** 	str_split		(const char*,char);
 
 int 	str_atoi		(const char*);
 char*	str_itoa		(int);

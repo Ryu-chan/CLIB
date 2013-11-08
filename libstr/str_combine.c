@@ -1,6 +1,7 @@
 /*
  * 文字列:
  * 2つの文字列を組み合わせて
+ * (2つのもじれつをきみあわせて)
  */
 
 #include "../lib/libstr.h"
@@ -20,12 +21,11 @@ char* 			str_combine(
 	c=0;
 	t=0;
 	while(vect[t] !=NULL){
-		c+=(my_strlen(vect[t++])+1);
+		c+=(str_len(vect[t++])+1);
 	}
 	
-	str = (char*)xmalloc((c)*sizeof(char));
+	str = (char*)xmalloc( ((t-1)*str_len(delim)+(c)) *sizeof(char));
 
-	
 	t = 0;
 	c = 0;
 	i = 0;
@@ -34,10 +34,13 @@ char* 			str_combine(
 			str[c++] = vect[t][i++];
 		}
 		i=0;
+		while(delim[i]!='\0'){
+			str[c++] = delim[i++];
+		}
 		t++;
-		str[c++] = ' ';
+		i=0;
 	}
-	str[--c] = '\0';
+	str[c-str_len(delim)] = '\0';
 
 	return str;
 }

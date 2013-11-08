@@ -1,15 +1,24 @@
-# lib (io) makefile
+# lib (str) makefile
 
 CFLAGS += -pedantic-errors
 
-NAME = 	io
+NAME = 	str
 SRC = \
-	xwriteb.c \
-	xwritec.c \
-	xwritee.c \
-	xwritef.c \
-	xwritei.c \
-	xwrites.c 
+ str_atoi.c \
+ str_cmp.c \
+ str_combine.c \
+ str_concat.c \
+ str_cpy.c \
+ str_dup.c \
+ str_index.c \
+ str_itoa.c \
+ str_len.c \
+ str_ncmp.c \
+ str_nconcat.c \
+ str_ncpy.c \
+ str_rev.c \
+ str_rindex.c \
+ str_split.c
 OBJ = 	$(SRC:.c=.o)
 RM = 	rm -f
 LIBPATH = ../lib
